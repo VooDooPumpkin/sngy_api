@@ -29,7 +29,7 @@ class CreateOccupation(graphene.Mutation):
         company_name = graphene.String(required=True)
         position_name = graphene.String(required=True)
         hire_date = graphene.Date(required=True)
-        fire_date = graphene.Date(required=True)
+        fire_date = graphene.Date(default_value=None)
         salary = graphene.Int(required=True)
         fraction = graphene.Int(required=True)
         base = graphene.Int(required=True)
